@@ -1,2 +1,25 @@
-# kotlin-agent-skills
-A collection of AI agent skills useful for projects using Kotlin language
+# AI agent skills for Kotlin
+
+A collection of AI agent skills useful for projects using the Kotlin language. Skills are following the Agent Skills
+standard, see [agentskills.io](https://agentskills.io) for more information.
+
+## How do Skills work?
+
+In practice, skills are self-contained folders that package instructions, scripts, and resources together for 
+an AI agent to use on a specific use case. Each folder includes a `SKILL.md` file with YAML 
+frontmatter (name and description) followed by the guidance your coding agent follows while the skill is active.
+
+### Skill naming conventions
+
+All skills in the repository should follow the following naming convention: `kotlin-<category>-<functional-name>`.
+
+`<category>` here is one of predefined categories. Current categories are:
+- `tooling` - any tooling related skills, for example build tooling one
+
+Please open an issue to add additional categories.
+
+`<functional-name>` should be a short, descriptive name of the skill, using snake-case naming convention. 
+
+### Repository layout
+
+- [skills/](./skills) - a directory where all skills are located
